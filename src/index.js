@@ -7,4 +7,4 @@ import './index.html';
 import './index.scss';
 import './scripts/script.js';
 //import './scripts/bootstrap.bundle'
-import './scripts/'
+import './scripts/dots';
