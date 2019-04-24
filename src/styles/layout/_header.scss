@@ -3,6 +3,13 @@ header {
   width: 100%;
 
   background: $color1;
+  background-image: url("/src/images/header_bg.jpg");
+  background-image: url("/src/images/header_bg_png.png"), linear-gradient(90deg, $color1, $color2);
+  background-repeat: no-repeat;
+
+  overflow: auto;
+
+  margin-top: 0;
 
   .socials {
     display: none;

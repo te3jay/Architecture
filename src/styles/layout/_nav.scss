@@ -2,10 +2,38 @@
 
     background: none;
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar__content{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 80%;
+
+        margin:10px auto;
+
+        .burger {
+
+            color: #fff;
+
+        }
+
+    }
+
     .dotstyle{
 
         display: none;
 
+    }
+
+    .nav__logo{
+        max-width: 70%;
     }
 
 }
