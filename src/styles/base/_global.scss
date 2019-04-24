@@ -1,20 +1,18 @@
-*::selection {
-  background: $pink;
-}
+
 
 html,
 body {
-  height: 100%;
+
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .wrapper {
-  max-width: 100%;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,14 +25,14 @@ p {
 
 a {
   text-decoration: none;
-  color: $blue;
+  color: gray;
 }
 
 img {
   display: block;
 }
 
-ul {
+/*ul {
   padding: 0;
   list-style: none;
-}
+}*/

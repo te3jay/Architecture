@@ -3,7 +3,16 @@ console.log('%c Welcome to tris-webpack-boilerplate! ', 'background: lavenderblu
 
 // add custom js below
 
+$(document).ready(function(){
 
+    $(".burger").click(function(){
+
+        $(".burger").toggleClass("open");
+
+    })
+
+
+})
 
 
 

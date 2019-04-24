@@ -1,9 +1,11 @@
 //! css frameworks
-// @import "../node_modules/bulma/bulma"; // css framework https://bulma.io/ - uncomment if you'd like to use it
+ @import "../node_modules/bulma/bulma"; // css framework https://bulma.io/ - uncomment if you'd like to use it
 
 //! utilities / helpers
 @import "./styles/utils/mixins";
 @import "./styles/utils/variables";
+@import "./styles/utils/animated-burgers-master/packages/Burger/styles.scss";
+@import "./styles/utils/animated-burgers-master/packages/BurgerSlip/styles.scss";
 
 //! site-wide base styles
 @import "./styles/base/setup"; /* normalize, clearfix, border-box, anti-aliasing, grey-scale */
@@ -12,5 +14,6 @@
 
 //! layout
 @import "./styles/layout/header";
+@import "./styles/layout/nav";
 // @import "./styles/layout/main";
 // @import "./styles/layout/footer";
