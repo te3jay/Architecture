@@ -1,0 +1,44 @@
+#about {
+
+    max-width: 80%;
+    margin: 40px auto 0 auto;
+    padding-bottom: 10px;
+    bottom: 0;
+    color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .arrow-down{
+        margin: 40px 0;
+    }
+
+    .about__photo__img{
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .img__back{
+        background: $color3;
+
+        .img__back__text{
+
+            font-size: 1.4rem;
+            
+        }
+        .img__back__content {
+            padding: 10px;
+        }
+    }
+
+    .play-video{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+
+}

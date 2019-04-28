@@ -1,0 +1,126 @@
+#gallery{
+    * { box-sizing: border-box; }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .details {
+
+        background: none;
+        border: 1px solid $color3;
+        color: $color3;
+        text-transform: uppercase;
+        margin: auto;
+        text-align: center;
+
+        padding: 15px;
+
+    }
+
+    .grid {
+        background: none;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        z-index: 1;
+        }
+    
+        /* clearfix */
+        .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+        margin: auto;
+        }
+    
+    /* ---- grid-item ---- */
+    
+        .grid-sizer,
+        .grid-item {
+        width: 20%;
+        margin-bottom: 15px;
+        }
+    
+        @include respond-to('desktop'){
+            .grid-sizer,
+            .grid-item {
+            width: 49%;
+        }
+    
+        figcaption {
+            opacity: 0;
+            overflow: hidden;
+    
+            transition: .3s ;
+    
+            .figcaption-content{
+    
+                transform: translateY(120%);
+                transition: .3s ease-in;
+            }
+            
+        }
+        figcaption:hover .figcaption-content {
+            transform: translateY(0%);
+        }
+        }
+        
+    
+        .grid-item {
+        float: left;
+        height: 100px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+            figcaption {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+    
+                .figcaption-content {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+    
+                    .featured {
+                        display: block;
+    
+                        font-size: 12px;
+                        //font-weight: $extra-bold;
+                        text-align: center;
+                        line-height: 23px;
+    
+                        color: black;
+                        //background-color: $featured;
+    
+                        width: 80px;
+                        border-radius: 25px;
+                    }
+    
+                    p {
+                        max-width: 60%;
+                        color: #fff;
+                        }
+                    }
+            }
+    
+            figcaption:hover{
+                opacity: 1;
+                box-shadow: 0 0 10px #222222 ;
+            }
+    
+        }
+    
+    
+        .grid-item--width2 { width:  100%; }
+        .grid-item--width3 { width:  60%; }
+    
+        .grid-item--height2 { height: 404px; }
+        .grid-item--height3 { height: 446px; }
+    
+
+}

@@ -16,8 +16,52 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #fff;
+  margin: auto;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color:  #2f4055;
+}
+
+.h3--white{
+  color: #fff;
+}
+
+.section__hr{
+  border: 1px solid  #2f4055;
+  max-width: 20%;
+  margin: 10px auto;
+}
+
+.section__hr--white{
+  border: 1px solid  #fff;
+  max-width: 20%;
+  margin: 10px auto;
+
+}
+
+section {
+  overflow: hidden;
+  margin: 20px 0;
 }
 
 p {

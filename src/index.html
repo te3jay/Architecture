@@ -28,6 +28,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
+  <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" 
+      type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" 
+  href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
 
 
 </head>
@@ -89,16 +97,21 @@
             <i class="fas fa-chevron-down fa-stack-1x"></i>
         </span>
   
-        <div class="header__photo">
-          <img src="/src/images/photos-68657fvzuMZYcNqq.png" class="header__photo__img" alt="">
+        <div class="about__photo">
+          <img src="/src/images/photos-68657fvzuMZYcNqq.png" class="about__photo__img" alt="">
           <div class="img__back">
-              <p class="img__back__text">
-                Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their notebooks.
-              </p>
-              <span class="play fa-stack fa-lg">
-                  <i class="far fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-play fa-stack-1x"></i>
-              </span>
+              <div class="img__back__content">
+                <p class="img__back__text">
+                  Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their notebooks.
+                </p>
+                <div class="play-video">
+                  <span class="play fa-stack fa-lg">
+                      <i class="far fa-circle fa-stack-2x"></i>
+                      <i class="fas fa-play fa-stack-1x"></i>
+                  </span>
+                  <p class="p__intro-video">watch <br> <strong>intro video</strong></p>
+                </div>
+              </div>
             </div>
         </div>
   
@@ -107,7 +120,7 @@
 
     <section id="projects">
 
-      <hr>
+      <hr class="section__hr">
       <h3>what we do</h3>
 
       <div class="projects__menu">
@@ -157,22 +170,26 @@
 
       <div class="projects__article">
 
-        <img src="/src/images/Projects/joel-filipe-151697.jpg" alt="One world trade" class="projects__article__img">
-        <p class="article__title">one world <br><strong>trade center</strong></p>
-        <p class="article__text">increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our toughts are very powerful.</p>
-        <button class="details">More details</button>
-        <p class="article__location"><i class="fas fa-map-marker-alt"></i>New York City, United States - 1776 feet</p>
+        <img src="/src/images/Projects/joel-filipe-151697.jpg" alt="One world trade" class="projects__article__img" style=" box-shadow: -10px -10px #55b7ff">
+        <div class="article__info">
+          <p class="article__title">one world <br><strong>trade center</strong></p>
+          <p class="article__text">increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our toughts are very powerful.</p>
+          <button class="details">More details</button>
+          <p class="article__location"><i class="fas fa-map-marker-alt"></i>New York City, United States - 1776 feet</p>
+        </div>
 
 
       </div>
 
       <div class="projects__article">
 
-        <img src="/src/images/Projects/building.jpg" alt="commerce center" class="projects__article__img">
-        <p class="article__title">international <br><strong>commerce center</strong></p>
-        <p class="article__text">Successful businesses have many things in common, today we''ll look at the big 'R' of recognition and how a digital advertising network may help.</p>
-        <button class="details">More details</button>
-        <p class="article__location"><i class="fas fa-map-marker-alt"></i>Hong kong - 1588 feet</p>
+        <img src="/src/images/Projects/building.jpg" alt="commerce center" class="projects__article__img" style=" box-shadow: 10px -10px #7e5aff">
+        <div class="article__info">
+          <p class="article__title">international <br><strong>commerce center</strong></p>
+          <p class="article__text">Successful businesses have many things in common, today we''ll look at the big 'R' of recognition and how a digital advertising network may help.</p>
+          <button class="details">More details</button>
+          <p class="article__location"><i class="fas fa-map-marker-alt"></i>Hong kong - 1588 feet</p>
+        </div>
 
 
       </div>  
@@ -181,12 +198,12 @@
 
     <section id="news">
 
-      <hr>
-      <h3>latest news</h3>
+      <hr class="section__hr--white">
+      <h3 class="h3--white">latest news</h3>
 
       <div class="carousel">
 
-        <div class="carousel__controls">
+        <!--<div class="carousel__controls">
 
             <span class="caousel__left fa-stack fa-lg">
                 <i class="far fa-circle fa-stack-2x"></i>
@@ -197,7 +214,7 @@
                 <i class="fas fa-chevron-right fa-stack-1x"></i>
             </span>
 
-        </div>
+        </div>-->
         <div class="carousel__indicators">
 
           <div class="indicator"></div>
@@ -208,12 +225,12 @@
 
         </div>
 
-        <div class="carousel__inner">
+        <div class="carousel carousel-slider">
 
-          <div class="carousel__article">
+          <div class="carousel__item" href="#one!" >
             <img src="/src/images/Carousel/lauren-mancke-60633.jpg" alt="">
             <div class="img--hover">
-                <span class="caousel__right fa-stack fa-lg">
+                <span class="carousel__right fa-stack fa-lg">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-plus fa-stack-1x"></i>
                 </span>
@@ -230,7 +247,7 @@
 
           </div>
           
-          <div class="carousel__article">
+          <div class="carousel__item" href="#two!">
             <img src="/src/images/Carousel/matthew-hamilton-202227.jpg" alt="">
             <div class="img--hover">
                 <span class="caousel__right fa-stack fa-lg">
@@ -248,7 +265,7 @@
 
             </div>
 
-          <div class="carousel__article">
+          <div class="carousel__item" href="#three!">
             <img src="/src/images/Carousel/joel-filipe-151690.jpg" alt="">
             <div class="img--hover">
                 <span class="caousel__right fa-stack fa-lg">
@@ -275,9 +292,52 @@
     </section>
 
     <section id="gallery">
-
-      <hr>
+        D:\WEB\cmder (1)\Projecten\architecture\src\images\gallery\tu-tram-pham-202263.jpg
+      <hr class="section__hr">
       <h3>gallery</h3>
+      <div class="grid">
+          <div class="grid-sizer"></div>
+          <div class="grid-item grid-item--width2 grid-item--height2" style="background-image:url('src/images/gallery/scott-webb-176434.jpg')" data-image= 'src/images/gallery/scott-webb-176434.jpg'>
+              <figcaption>
+                  <div class="figcaption-content">
+                      <div class="featured">featured</div>
+                      <p>Motivation is the first step to success</p>
+                  </div>  
+              </figcaption>
+          </div>
+          <div class="grid-item" style="background-image:url('src/images/gallery/photos-13323p6Bdc0uhr8Bq.jpg')" data-image= 'src/images/gallery/photos-13323p6Bdc0uhr8Bq.jpg'>
+              <figcaption>
+                  <div class="figcaption-content">
+                      <p>How great is the strength of your belief</p>
+                  </div>
+              </figcaption>
+          </div>
+          <div class="grid-item" style="background-image:url('src/images/gallery/echo-grid-156713.jpg')" data-image= 'src/images/gallery/echo-grid-156713.jpg'>
+              <figcaption>
+                  <div class="figcaption-content">
+                      <p>Benjamin Franklin s method of habit formation</p>
+                  </div>
+              </figcaption>
+          </div>
+          <div class="grid-item" style="background-image:url('src/images/gallery/fuse-brussels-169216.jpg')" data-image= 'src/images/gallery/fuse-brussels-169216.jpg'>
+              <figcaption>
+                  <div class="figcaption-content">
+                      <div class="featured">featured</div>
+                      <p>increasing prosperity with positive thinking</p>
+                  </div>
+              </figcaption>
+          </div>
+          <div class="grid-item" style="background-image:url('src/images/gallery/tu-tram-pham-202263.jpg')" data-image= 'src/images/gallery/tu-tram-pham-202263.jpg'>
+              <figcaption>
+                  <div class="figcaption-content">
+                      <div class="featured">featured</div>
+                      <p>increasing prosperity with positive thinking</p>
+                  </div>
+              </figcaption>
+          </div>
+  </div>
+
+  <button class="details">See more</button>
 
       
 
@@ -285,11 +345,13 @@
 
     <section id="contact">
 
-      <div class="map">
+      <div class="map" id="mapContainer" style="width: 100%; height: 480px">
 
       </div>
 
       <div class="contact__info">
+        <hr class="section__hr">
+        <h3>get in touch</h3>
         <div class="Contact__info__text">
 
             <i class="fas fa-map-marker-alt"></i><p class="contact__text">91 Nolan Extensions Suite 670</p>
