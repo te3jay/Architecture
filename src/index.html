@@ -43,49 +43,49 @@
 <body>
 
   <div class="wrapper">
+    <nav class="navbar">
+  
+      <div class="navbar__content">
+        <img src="/src/images/Logo.png" alt="Logo monticello" class="nav__logo">
+
+        <div class="dotstyle dotstyle-fillup">
+          <ul >
+            <li class="nav__li"><a href="#about" class="nav__a"><div class="nav__dot current"></div>about us</a></li>
+            <li class="nav__li"><a href="#projects" class="nav__a"><div class="nav__dot"></div>projects</a></li>
+            <li class="nav__li"><a href="#news" class="nav__a"><div class="nav__dot"></div>news</a></li>
+            <li class="nav__li"><a href="#contact" class="nav__a"><div class="nav__dot"></div>contact</a></li>
+          </ul>
+        </div>
+
+        <div class="socials">
+          <a href="https://facebook.com" target="_blank">
+            <span class="facebook fa-stack fa-lg">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com " target="_blank">
+            <span class="twitter fa-stack fa-lg">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </span>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <span class="instagram fa-stack fa-lg">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+            </span>
+          </a>
+        </div>
+
+        <div class="burger burger-slide">
+          <div class="burger-lines"></div>
+        </div>
+      </div>
+
+    </nav>
 
     <header>
-      <nav class="navbar">
-  
-          <div class="navbar__content">
-            <img src="/src/images/Logo.png" alt="Logo monticello" class="nav__logo">
-    
-            <div class="dotstyle dotstyle-stroke">
-              <ul class="navbar__menu">
-                <li><a href="#about">about us</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#news">news</a></li>
-                <li><a href="#contact">contact</a></li>
-              </ul>
-            </div>
-    
-            <div class="socials">
-              <a href="https://facebook.com" target="_blank">
-                <span class="facebook fa-stack fa-lg">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                </span>
-              </a>
-              <a href="https://twitter.com " target="_blank">
-                <span class="twitter fa-stack fa-lg">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x"></i>
-                </span>
-              </a>
-              <a href="https://instagram.com" target="_blank">
-                <span class="instagram fa-stack fa-lg">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-instagram fa-stack-1x"></i>
-                </span>
-              </a>
-            </div>
-    
-            <div class="burger burger-slide">
-              <div class="burger-lines"></div>
-            </div>
-          </div>
-  
-      </nav>
   
       <section id="about">
   
@@ -125,7 +125,7 @@
 
       <div class="projects__menu">
 
-        <div class="projects__menu__item">
+        <div class="projects__menu__item -">
 
           <img src="/src/images/10.png" alt="apartment" class="menu__item__img">
           <hr>
@@ -141,7 +141,7 @@
 
         </div>
 
-        <div class="projects__menu__item">
+        <div class="projects__menu__item item--active">
 
           <img src="/src/images/2.png" alt="trade center" class="menu__item__img">
           <hr>
@@ -170,7 +170,7 @@
 
       <div class="projects__article">
 
-        <img src="/src/images/Projects/joel-filipe-151697.jpg" alt="One world trade" class="projects__article__img" style=" box-shadow: -10px -10px #55b7ff">
+        <img src="/src/images/Projects/joel-filipe-151697.jpg" alt="One world trade" class="projects__article__img">
         <div class="article__info">
           <p class="article__title">one world <br><strong>trade center</strong></p>
           <p class="article__text">increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our toughts are very powerful.</p>
@@ -181,9 +181,9 @@
 
       </div>
 
-      <div class="projects__article">
+      <div class="projects__article article-reverse">
 
-        <img src="/src/images/Projects/building.jpg" alt="commerce center" class="projects__article__img" style=" box-shadow: 10px -10px #7e5aff">
+        <img src="/src/images/Projects/building.jpg" alt="commerce center" class="projects__article__img" >
         <div class="article__info">
           <p class="article__title">international <br><strong>commerce center</strong></p>
           <p class="article__text">Successful businesses have many things in common, today we''ll look at the big 'R' of recognition and how a digital advertising network may help.</p>
@@ -202,140 +202,125 @@
       <h3 class="h3--white">latest news</h3>
 
       <div class="carousel">
-
-        <!--<div class="carousel__controls">
-
-            <span class="caousel__left fa-stack fa-lg">
-                <i class="far fa-circle fa-stack-2x"></i>
-                <i class="fas fa-chevron-left fa-stack-1x"></i>
-            </span>
-            <span class="caousel__right fa-stack fa-lg">
-                <i class="far fa-circle fa-stack-2x"></i>
-                <i class="fas fa-chevron-right fa-stack-1x"></i>
-            </span>
-
-        </div>-->
-        <div class="carousel__indicators">
-
-          <div class="indicator"></div>
-          <div class="indicator"></div>
-          <div class="indicator"></div>
-          <div class="indicator"></div>
-          <div class="indicator"></div>
-
-        </div>
-
-        <div class="carousel carousel-slider">
-
           <div class="carousel__item" href="#one!" >
-            <img src="/src/images/Carousel/lauren-mancke-60633.jpg" alt="">
-            <div class="img--hover">
-                <span class="carousel__right fa-stack fa-lg">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-plus fa-stack-1x"></i>
-                </span>
-            </div>
-            <p class="carousel__title">see the unmatched beauty of the great.</p>
-            <p class="carousel__text">free directories: directories are perfect for customers that are... searching for</p>
-            <div class="article__writer">
-
-              <img src="/src/images/Carousel/photos-13323rs3Du9xyQ3KR.jpg" alt="" class="avatar">
-              <p class="writer__name">isaac dunn</p>
-              <p class="writer__date">09 Feb 2017</p>
-
-            </div>
-
-          </div>
-          
-          <div class="carousel__item" href="#two!">
-            <img src="/src/images/Carousel/matthew-hamilton-202227.jpg" alt="">
-            <div class="img--hover">
-                <span class="caousel__right fa-stack fa-lg">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-plus fa-stack-1x"></i>
-                </span>
-            </div>
-            <p class="carousel__title">effective advertising pointers.</p>
-            <p class="carousel__text">having a home based business is a wonderfull asset to your life...</p>
-            <div class="article__writer">
-
-              <img src="/src/images/Carousel/photos-13323vsWmKApDZJIh.jpg" alt="" class="avatar">
-              <p class="writer__name">dominic freeman</p>
-              <p class="writer__date">24 Apr 2017</p>
-
+              <div class="carousel__img">
+                <img src="/src/images/Carousel/lauren-mancke-60633.jpg" alt="">
+                <div class="img--hover">
+                    <span class="carousel__right fa-stack fa-lg">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-plus fa-stack-1x"></i>
+                    </span>
+                </div>
+              </div>
+              <p class="carousel__title">see the unmatched beauty of the great.</p>
+              <p class="carousel__text">free directories: directories are perfect for customers that are... searching for</p>
+              <div class="article__writer">
+  
+                <img src="/src/images/Carousel/photos-13323rs3Du9xyQ3KR.jpg" alt="" class="avatar">
+                <p class="writer__name">isaac dunn</p>
+                <p class="writer__date">09 Feb 2017</p>
+  
+              </div>
+  
             </div>
 
-          <div class="carousel__item" href="#three!">
-            <img src="/src/images/Carousel/joel-filipe-151690.jpg" alt="">
-            <div class="img--hover">
-                <span class="caousel__right fa-stack fa-lg">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-plus fa-stack-1x"></i>
-                </span>
-            </div>
-            <p class="carousel__title">hypnotize yourself into the ghost.</p>
-            <p class="carousel__text">There are many things that are important to catalog design...</p>
-            <div class="article__writer">
+            <div class="carousel__item" href="#two!">
+                <div class="carousel__img">
+                  <img src="/src/images/Carousel/matthew-hamilton-202227.jpg" alt="">
+                  <div class="img--hover">
+                      <span class="carousel__right fa-stack fa-lg">
+                          <i class="far fa-circle fa-stack-2x"></i>
+                          <i class="fas fa-plus fa-stack-1x"></i>
+                      </span>
+                  </div>
+                </div>
+                <p class="carousel__title">effective advertising pointers.</p>
+                <p class="carousel__text">having a home based business is a wonderfull asset to your life...</p>
+                <div class="article__writer">
+    
+                  <img src="/src/images/Carousel/photos-13323vsWmKApDZJIh.jpg" alt="" class="avatar">
+                  <p class="writer__name">dominic freeman</p>
+                  <p class="writer__date">24 Apr 2017</p>
+    
+                </div>
+              </div>
 
-              <img src="/src/images/Carousel/photos-13323TAfapiSrc9IO.jpg" alt="" class="avatar">
-              <p class="writer__name">alice ward</p>
-              <p class="writer__date">30 Dec 2017</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
+              <div class="carousel__item" href="#three!">
+                  <div class="carousel__img">
+                    <img src="/src/images/Carousel/joel-filipe-151690.jpg" alt="">
+                    <div class="img--hover">
+                        <span class="carousel__right fa-stack fa-lg">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x"></i>
+                        </span>
+                    </div>
+                  </div>
+                  <p class="carousel__title">hypnotize yourself into the ghost.</p>
+                  <p class="carousel__text">There are many things that are important to catalog design...</p>
+                  <div class="article__writer">
+      
+                    <img src="/src/images/Carousel/photos-13323TAfapiSrc9IO.jpg" alt="" class="avatar">
+                    <p class="writer__name">alice ward</p>
+                    <p class="writer__date">30 Dec 2017</p>
+      
+                  </div>
+      
+                </div>
       </div>
 
     </section>
 
     <section id="gallery">
-        D:\WEB\cmder (1)\Projecten\architecture\src\images\gallery\tu-tram-pham-202263.jpg
+
       <hr class="section__hr">
       <h3>gallery</h3>
       <div class="grid">
           <div class="grid-sizer"></div>
+          <div class="gutter-sizer"></div>
           <div class="grid-item grid-item--width2 grid-item--height2" style="background-image:url('src/images/gallery/scott-webb-176434.jpg')" data-image= 'src/images/gallery/scott-webb-176434.jpg'>
               <figcaption>
                   <div class="figcaption-content">
-                      <div class="featured">featured</div>
-                      <p>Motivation is the first step to success</p>
+                      <img src="/src/images/360.png" alt="">
                   </div>  
               </figcaption>
           </div>
           <div class="grid-item" style="background-image:url('src/images/gallery/photos-13323p6Bdc0uhr8Bq.jpg')" data-image= 'src/images/gallery/photos-13323p6Bdc0uhr8Bq.jpg'>
               <figcaption>
                   <div class="figcaption-content">
-                      <p>How great is the strength of your belief</p>
+                    <img src="/src/images/360.png" alt="">
                   </div>
               </figcaption>
           </div>
           <div class="grid-item" style="background-image:url('src/images/gallery/echo-grid-156713.jpg')" data-image= 'src/images/gallery/echo-grid-156713.jpg'>
               <figcaption>
                   <div class="figcaption-content">
-                      <p>Benjamin Franklin s method of habit formation</p>
+                    <img src="/src/images/360.png" alt="">
                   </div>
               </figcaption>
           </div>
           <div class="grid-item" style="background-image:url('src/images/gallery/fuse-brussels-169216.jpg')" data-image= 'src/images/gallery/fuse-brussels-169216.jpg'>
               <figcaption>
                   <div class="figcaption-content">
-                      <div class="featured">featured</div>
-                      <p>increasing prosperity with positive thinking</p>
+                    <img src="/src/images/360.png" alt="">
                   </div>
               </figcaption>
           </div>
           <div class="grid-item" style="background-image:url('src/images/gallery/tu-tram-pham-202263.jpg')" data-image= 'src/images/gallery/tu-tram-pham-202263.jpg'>
               <figcaption>
                   <div class="figcaption-content">
-                      <div class="featured">featured</div>
-                      <p>increasing prosperity with positive thinking</p>
+                    <img src="/src/images/360.png" alt="">
                   </div>
               </figcaption>
           </div>
   </div>
+
+  <!--<div class="modal" id="modal">
+    <div class="modal__content">
+        <span class="close-cursor">x</span>
+        <div class="modal-content__image"></div>
+        <p class="modal-content__caption"></p>
+    </div>
+  </div>-->
 
   <button class="details">See more</button>
 
@@ -345,36 +330,57 @@
 
     <section id="contact">
 
-      <div class="map" id="mapContainer" style="width: 100%; height: 480px">
+      <div class="map__wrapper">
+        <div class="map" id="mapContainer" style="width: 100%; height: 580px">        </div>
 
+        <div class="map__pin"></div>
+  
+        <div class="map__info">
+          <img src="/src/images/daniel-hansen-252817.png" alt="">
+          <div class="map__info__text">
+            <p class="map__info__text__title">Monticello group HQ</p>
+            <a href="https://www.google.be/maps/dir//51.2196302,4.4015405/@51.2197511,4.4022613,18.75z/data=!4m2!4m1!3e0" target="_blank"><i class="fas fa-location-arrow"></i>Get a direction</a>
+          </div>
+        </div>
       </div>
 
+      
       <div class="contact__info">
-        <hr class="section__hr">
-        <h3>get in touch</h3>
-        <div class="Contact__info__text">
-
-            <i class="fas fa-map-marker-alt"></i><p class="contact__text">91 Nolan Extensions Suite 670</p>
-            <i class="fas fa-phone fa-flip-horizontal"></i><p class="contact__text">+001 356-868-2454</p>
-            <i class="fas fa-inbox"></i><p class="contact__text"><a href="mailto:gahuy93@gmail.com">gahuy93@gmail.com</a></p>
-            <i class="far fa-clock"></i><p class="contact__text">From 07:05AM to 19:30PM</p>
-
+          <hr class="section__hr">
+          <h3>get in touch</h3>
+        <div class="contact__info__content">
+          <div class="Contact__info__text">
+  
+              <div class="contact__info__line">
+                <i class="fas fa-map-marker-alt"></i><p class="contact__text">91 Nolan Extensions Suite 670</p>
+              </div>
+              <div class="contact__info__line">
+                <i class="fas fa-phone fa-flip-horizontal"></i><p class="contact__text">+001 356-868-2454</p>
+              </div>
+              <div class="contact__info__line">
+                <i class="fas fa-inbox"></i><p class="contact__text"><a href="mailto:gahuy93@gmail.com">gahuy93@gmail.com</a></p>
+              </div>
+              <div class="contact__info__line">
+                <i class="far fa-clock"></i><p class="contact__text">From 07:05AM to 19:30PM</p>
+              </div>
+  
+          </div>
+  
+          <form name="contactform" action="#" id="contactform" class="validate-form" novalidate>
+  
+              <div class="form-row">
+                  <input type="text" id="name" name="name" placeholder="Name" class="required" data-required="Gelieve uw naam in te vullen">
+              </div>
+              <div class="form-row">
+                  <input type="email" id="email" name="email" placeholder="Email" class="required" data-required="Gelieve uw emailadres in te vullen" data-required-mail="Gelieven een correct emailadres in te vullen.">
+              </div>
+  
+              <button type="submit" name="submit" class="submit">
+                SUBMIT
+              </button>
+  
+          </form>
         </div>
-
-        <form name="contactform" action="#" id="contactform" class="validate-form" novalidate>
-
-            <div class="form-row">
-                <input type="text" id="name" name="name" placeholder="Name" class="required" data-required="Gelieve uw naam in te vullen">
-            </div>
-            <div class="form-row">
-                <input type="email" id="email" name="email" placeholder="Email" class="required" data-required="Gelieve uw emailadres in te vullen" data-required-mail="Gelieven een correct emailadres in te vullen.">
-            </div>
-
-            <button type="submit" name="submit" class="submit">
-              SUBMIT
-            </button>
-
-        </form>
       </div>
 
     </section>

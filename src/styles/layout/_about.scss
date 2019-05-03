@@ -1,9 +1,11 @@
 #about {
 
     max-width: 80%;
-    margin: 40px auto 0 auto;
-    padding-bottom: 10px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 40px;
+    padding-top: 67px;
     bottom: 0;
+    top: 0;
     color: #fff;
     
     display: flex;
@@ -18,11 +20,12 @@
 
     .about__photo__img{
         max-width: 80vw;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .img__back{
         background: $color3;
+        max-width: 80vw;
 
         .img__back__text{
 
@@ -37,8 +40,62 @@
     .play-video{
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
+        margin-top: 20px;
+        text-transform: uppercase;
     }
+
+
+}
+
+@include respond-to('desktop'){
+
+    #about{
+
+        .about__photo{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 70%;
+            position: absolute;
+            bottom: 0;
+
+            .about__photo__img{
+                flex-basis: 100%;
+                max-width: 50%;
+                height: auto;
+                margin-left: -40px;
+                margin-bottom: -80px;
+                align-self: center;
+
+                z-index: 3;
+
+            }
+            .img__back{
+                flex-basis: 100%;
+
+                max-width: 50%;
+
+                margin-top: 40px;
+                margin-right: -40px;
+                margin-bottom: -120px;
+
+                z-index: 2;
+
+                .img__back__content{
+
+                    max-width: 75%;
+                    margin: 50px 25px;
+
+                    .img__back__text{
+                        font-size: 20px;
+                    }
+                    .play-video{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
 
 
 }

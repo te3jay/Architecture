@@ -4,30 +4,50 @@
     margin: auto;
     overflow: unset;
 
+    .article-reverse {
+        flex-direction: row-reverse;
+    }
+
     .projects__menu{
 
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-bottom: 50px;
 
         .projects__menu__item{
 
-            margin: 10px;
-            width: 80px;
+            //margin: 10px;
+            width: 150px;
+            height: 150px;
+            padding: 10px;
 
             img {
                 height: 50px;
-                margin: 0 auto;
+                margin: auto;
             }
 
             .menu__item__text{
 
                 text-align: center;
+                text-transform: uppercase;
+                margin: auto;
 
             }
 
+            hr{
+                max-width: 25%;
+                margin: 20px auto;
+            }
+
+            transition: .3s;
+
             
 
+        }
+
+        .item--active{
+            box-shadow: 0 0 5px #c7c7c7;
         }
 
     }
@@ -38,6 +58,8 @@
 
         .projects__article__img{
             max-width: 100%;
+            box-shadow: -10px -10px $color1;
+
         }
 
 
@@ -69,6 +91,63 @@
 
         }
 
+    }
+
+    .article-reverse{
+        .projects__article__img{
+            box-shadow: 10px -10px $color2;
+        }
+    }
+
+}
+
+@include respond-to('desktop'){
+
+    #projects{
+
+        margin-top: 160px;
+
+        .projects__menu{
+            justify-content: space-between;
+        }
+
+        .projects__article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+
+
+            .projects__article__img{
+
+                max-width: 45%;
+                align-self: center;
+                height: unset;
+                box-shadow: -200px -50px $color1;
+            }
+
+            .article__info{
+
+                max-width: 45%;
+                .article__title{
+                    font-size: 22px;
+
+                    strong{
+                        font-size: 44px;
+                    }
+                }
+            }
+        }
+
+        .article-reverse {
+            flex-direction: row-reverse;
+
+            .projects__article__img{
+            
+                box-shadow: 200px -50px $color2;
+            }
+
+        }
     }
 
 }

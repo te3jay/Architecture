@@ -1,0 +1,113 @@
+footer{
+
+    background: $color1;
+    background-image: url("/src/images/header_bg.jpg");
+    background-image: url("/src/images/footer_bg.png"), linear-gradient(90deg, $color1, $color2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 20px 0;
+
+    .footer__nav{
+        border-bottom: .1px solid #fff;
+
+        .footer__nav__ul{
+            list-style: none;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+
+            
+            .footer__nav__li{
+                display: block;
+                margin: 5px;
+
+                a{
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+
+            }
+        }
+    }
+
+    .footer__row{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        margin-top: 20px;
+
+        img{
+            align-self: center;
+        }
+
+        .socials{
+            display: flex;
+            justify-content: center;
+
+            margin-top: 20px;
+            
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    .footer__copyrights{
+
+        width: 80%;
+
+        margin: auto;
+
+        color: #fff;
+
+        text-align: center;
+
+        margin-top: 20px;
+
+    }
+
+}
+
+@include respond-to('desktop'){
+
+    footer{
+
+        padding-top: 150px;
+
+        .footer__nav{
+
+            width: 50%;
+            margin: auto;
+
+            .footer__nav__ul{
+                justify-content: space-between;
+            }
+        }
+
+        .footer__row{
+
+            width: 50%;
+            margin: auto;
+            margin-top: 16px;
+
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .footer__copyrights{
+
+            width: 50%;
+
+            margin: 32px auto;
+
+            text-align: left;
+        }
+
+    }
+    
+}

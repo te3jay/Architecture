@@ -3,7 +3,7 @@ console.log('%c Welcome to tris-webpack-boilerplate! ', 'background: lavenderblu
 
 // add custom js below
 
-
+//map
 $(document).ready(function() {
 
     var platform = new H.service.Platform({
@@ -18,22 +18,22 @@ var map = new H.Map(
   document.getElementById('mapContainer'),
   defaultLayers.normal.map,
   {
-    zoom: 13,
+    zoom: 17,
     center: { lat: 51.219448, lng: 4.402464 }
   });
 
   var ui = H.ui.UI.createDefault(map, defaultLayers);
 
-    $(".burger").click(function(){
-        $(".burger").toggleclass("open")
-    })
+  //grid
 
     $('.grid').masonry({
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
-        gutter: 15,
-        percentPosition: true
+        gutter: 19,
+
     });
+
+    // projects menu
   
 
 });  

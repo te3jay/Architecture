@@ -70,7 +70,7 @@ p {
 
 a {
   text-decoration: none;
-  color: gray;
+  color: black;
 }
 
 img {
@@ -81,3 +81,18 @@ img {
   padding: 0;
   list-style: none;
 }*/
+
+@include respond-to('desktop'){
+
+h1{
+  font-size: 80px;
+  margin-top: 160 px;
+  margin-bottom: 0;
+}
+
+h2{
+  font-size: 18px;
+}
+
+
+}
