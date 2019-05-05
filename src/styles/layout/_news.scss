@@ -2,7 +2,7 @@
 
     background: $color1;
     background-image: url("/src/images/New_bg.png");
-    background-image: url("/src/images/New_bg.png"), linear-gradient(90deg, $color1, $color2);
+    background-image: url("/src/images/New_bg.png"), linear-gradient(90deg, $color2, $color1);
     background-repeat: no-repeat;
 
     height: 100vh;
@@ -25,7 +25,7 @@
     .carousel{
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         max-width: 80%;
         margin: auto;
@@ -40,7 +40,7 @@
             .carousel__img{
                 position: relative;
                 min-width: 300px;
-                height: 250px;
+                height: 40%;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -71,7 +71,8 @@
             .carousel__details{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
+                height: 60%;
             }
 
             .carousel__title{
@@ -113,4 +114,5 @@
 .avatar{
     border-radius: 50%;
 }
+
  }

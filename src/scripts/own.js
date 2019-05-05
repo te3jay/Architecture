@@ -193,6 +193,34 @@ $(".grid-item").click(function(){
 
   }
 
+  else{
+    $('.carousel').slick({
+      accessibility: false,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      adaptiveHeight: false,
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      cssEase: 'linear',
+      infinite: true,
+      //centerMode: true,
+      dotsClass: 'carousel-dots'
+    })
+
+  }
+
+  $(".play-video").click(function(){
+    $(".screen-overlay").css("visibility", "visible")
+    $("#ytframe").attr("src", "https://www.youtube.com/embed/BPKDOMot9eU")
+  })
+
+  $(".screen-overlay--close").click(function(){
+    $(".screen-overlay").css("visibility", "hidden")
+    $("#ytframe").attr("src", "")
+  })
+
   
 
 
