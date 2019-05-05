@@ -174,8 +174,9 @@ $(".grid-item").click(function(){
   if(newWindowWidth < 969){
 
     $('.carousel').slick({
-      accessibility: true,
-      arrows: false,
+      accessibility: false,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
       adaptiveHeight: false,
       slidesToShow: 1,
       autoplay: false,
@@ -183,7 +184,12 @@ $(".grid-item").click(function(){
       dots: true,
       cssEase: 'linear',
       infinite: true,
+      //centerMode: true,
+      dotsClass: 'carousel-dots'
     })
+    .on('setPosition', function (event, slick) {
+      slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+  })
 
   }
 

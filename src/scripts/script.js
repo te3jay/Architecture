@@ -19,10 +19,18 @@ var map = new H.Map(
   defaultLayers.normal.map,
   {
     zoom: 17,
-    center: { lat: 51.219448, lng: 4.402464 }
+    center: { lat: 51.21959, lng: 4.40304 }
   });
 
   var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+ // D:\WEB\cmder (1)\Projecten\architecture\src\images\Pin.png
+
+  var icon = new H.map.Icon('./src/images/Pin.png');
+
+  var marker = new H.map.Marker({ lat: 51.21963, lng: 4.40157 }, { icon: icon });
+
+  map.addObject(marker);
 
   //grid
 
