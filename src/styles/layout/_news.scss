@@ -9,7 +9,124 @@
 
     overflow: hidden;
 
-    .carousel-arrow{
+    .carousel-complete{
+        display: flex;
+        flex-direction: row;
+        max-width: 90%;
+        height: 90%;
+        margin: auto;
+
+        .carousel{
+            max-width: 80%;
+            margin: auto;
+
+            .slick-list{
+                .slick-track{
+                    margin: 0 -10px;
+
+
+                    .slick-slide{
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+            .carousel__item{
+
+                height: 60vh;
+                margin: auto;
+
+                background: #fff;
+
+
+                .carousel__img{
+                    position: relative;
+                    width: 100%;
+                    height: 40%;
+
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    .img--hover{
+                        position: absolute;
+                        margin: auto;
+                        width: 100px;
+                        height: 100px;
+                        color: #fff;
+                        left: 50%;
+                        top: 50%;
+                        margin-left: -25px;
+                        margin-top: -25px;
+    
+                        span{
+                            //width: 50px;
+                            //height: 50px;
+                           i{
+                                margin: auto;
+                                text-shadow: 0 0 5px black;
+                           }
+                        }
+                    }
+                }
+                .carousel__details{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    height: 60%;
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 10px 0;
+
+                    .carousel__title{
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+
+                    .article__writer{
+                        display: flex;
+                        flex-direction: row;
+
+
+                        .avatar{
+                            border-radius: 50%;
+                        }
+                        .writer__details{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            margin-left: 20px;
+                        }
+                        .writer__name{
+                            text-transform: uppercase;
+                        }
+                        .writer__date{
+                            color: $color1;
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+
+        .carousel-arrow{
+            display: block;
+            width: 40px;
+            height: 40px;
+            align-self: center;
+        }
+        .prev{
+            background-image: url("/src/images/back.png");
+        }
+        .next{
+            background-image: url("/src/images/next.png");
+        }
+    }
+
+    /* .carousel-arrow{
 
         display: block;
 
@@ -20,15 +137,35 @@
         margin: 0;
 
         }
+
+        .carousel-complete{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .carousel-arrow{
+                width: 40px;
+                font-size: 40px;
+
+                i{
+                    max-width: 100%;
+                }
+            }
+        }
     
 
     .carousel{
 
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         max-width: 80%;
         margin: auto;
+
+        .carousel-dots{
+            margin: 0;
+        }
 
         .carousel__item{
 
@@ -115,4 +252,9 @@
     border-radius: 50%;
 }
 
- }
+ } */
+
+
+
+
+}
