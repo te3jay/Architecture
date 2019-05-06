@@ -1,10 +1,34 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
+    const bodyScrollLock = require('./bodyScrollLock.js');
+    const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+    const enableBodyScroll = bodyScrollLock.enableBodyScroll; 
+
     $(".burger").click(function(){
         $(".burger").toggleClass("open")
         $(".navbar").toggleClass("navbar--open")
         $(".dotstyle").toggleClass("dotstyle--open")
+        $(".navbar__ul").toggleClass("navbar__ul--open")
+        if ($(".burger").hasClass("open")){
+          disableBodyScroll()
+        }
+        else if (!$(".burger").hasClass("open")){
+          enableBodyScroll()
+        }
+    })
+
+    $(".nav__a").click(function(){
+      $(".burger").toggleClass("open")
+      $(".navbar").toggleClass("navbar--open")
+      $(".dotstyle").toggleClass("dotstyle--open")
+      $(".navbar__ul").toggleClass("navbar__ul--open")
+     if ($(".burger").hasClass("open")){
+      disableBodyScroll()
+    }
+    else if (!$(".burger").hasClass("open")){
+      enableBodyScroll()
+    }
     })
 
     $(".projects__menu__item").click(function(){
@@ -126,9 +150,7 @@ scrollnav.init(content);
 
 */
 
-const bodyScrollLock = require('./bodyScrollLock.js');
-const disableBodyScroll = bodyScrollLock.disableBodyScroll;
-const enableBodyScroll = bodyScrollLock.enableBodyScroll; 
+
 
 function openModal() {
 
