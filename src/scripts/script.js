@@ -34,12 +34,12 @@ var map = new H.Map(
 
   //grid
 
-    $('.grid').masonry({
+/*     $('.grid').masonry({
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         gutter: 19,
 
-    });
+    }); */
 
     // projects menu
   

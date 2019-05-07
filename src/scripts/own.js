@@ -249,6 +249,10 @@ $(".grid-item").click(function(){
     activeClass: "current",
     offset: -120
   })
+  $(".scrollspy").scrollspy({
+    activeClass: "scrollspy__dot--current",
+    offset: -120
+  })
 
   
 
