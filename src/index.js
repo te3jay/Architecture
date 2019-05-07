@@ -18,6 +18,7 @@ import './scripts/materialize';
 import './scripts/dots';
 import './scripts/scrollnav.min.umd';
 import './scripts/bodyScrollLock';
+import './scripts/scrollspy';
 //import './scripts/bootstrap.bundle';
 import './scripts/masonry.pkgd.min.js';
 import './slick/slick';

@@ -50,7 +50,7 @@ $( document ).ready(function() {
         //Smooth scroll
 
       // Add smooth scrolling to all links
-  $(".nav__a").on('click', function(event) {
+  $(".nav__a, .arrow-down-a, .footer__a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -201,7 +201,7 @@ $(".grid-item").click(function(){
       nextArrow: $('.next'),
       adaptiveHeight: false,
       slidesToShow: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 5000,
       dots: true,
       cssEase: 'linear',
@@ -241,6 +241,13 @@ $(".grid-item").click(function(){
   $(".screen-overlay--close").click(function(){
     $(".screen-overlay").css("visibility", "hidden")
     $("#ytframe").attr("src", "")
+  })
+
+  //SCROLLSPY
+
+  $(".dotstyle").scrollspy({
+    activeClass: "current",
+    offset: -120
   })
 
   

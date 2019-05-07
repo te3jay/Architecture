@@ -117,6 +117,8 @@
             width: 40px;
             height: 40px;
             align-self: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .prev{
             background-image: url("/src/images/back.png");
