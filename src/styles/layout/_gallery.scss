@@ -7,6 +7,13 @@
     flex-direction: column;
     justify-content: center;
 
+    .section__hr{
+        border: 1p solid $color3;
+        max-width: 20%;
+        margin: 10px auto;
+        height: 2px;
+    }
+
     .details {
 
         background: none;
@@ -85,7 +92,7 @@
 
     .modal{
         position: fixed;
-        display: block;
+        display: none;
         top: 0;
         bottom: 0;
         left: 0;

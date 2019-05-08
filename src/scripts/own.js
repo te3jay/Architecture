@@ -156,7 +156,8 @@ function openModal() {
 
   $("#modal").css({
     'opacity' : '1',
-    'z-index' : '9'
+    'z-index' : '9',
+    'display' : 'block'
   })
   setTimeout(function(){
     $('.modal-content__image').addClass("image--open")
@@ -169,7 +170,8 @@ function closeModal() {
     setTimeout(function(){
       $("#modal").css({
         'opacity' : '0',
-        'z-index' : '0' 
+        'z-index' : '0' ,
+        'display' : 'none'
      })
   }, 300)
   $('.modal-content__image').removeClass("image--open")
