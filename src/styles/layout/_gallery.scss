@@ -37,7 +37,7 @@
         grid-template-columns: 100% ;
         grid-template-rows: repeat(2, [row] 2fr  );
         
-        z-index: 1;
+        z-index: 0;
     }
 
     .box{
