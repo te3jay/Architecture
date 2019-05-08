@@ -26,17 +26,43 @@
         height: 50%;
         width: 100%;
         margin: auto;
-        grid-row-gap: 2%;
         -ms-grid-columns: 100%; 
-        grid-template-columns: repeat(1, [col] auto ) ;
+        grid-template-columns: 100% ;
 		grid-template-rows: repeat(2, [row] 2fr  );
     }
 
     .box{
+        position: relative;
         padding: 0;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+        figcaption{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            .figcaption-content{
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                margin-left: -40px;
+                margin-bottom: -40px;
+                max-height: 100%;
+                width: 80px;
+                height: 80px;
+
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        figcaption:hover{
+            opacity: 1;
+            box-shadow: 0 0 10px #222222
+        }
     }
 
     .box .box{
@@ -74,6 +100,19 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+
+            figcaption{
+                opacity: 0;
+                overflow: hidden;
+
+                transition: .3s;
+
+                .figcaption-content{
+                    transition: .3s;
+                }
+            }
+
+            
         }
     
         .box .box{

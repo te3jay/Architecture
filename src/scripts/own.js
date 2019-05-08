@@ -203,7 +203,7 @@ $(".grid-item").click(function(){
       slidesToShow: 1,
       autoplay: true,
       autoplaySpeed: 5000,
-      dots: true,
+      dots: false,
       cssEase: 'linear',
       infinite: true,
       //centerMode: true,

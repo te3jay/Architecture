@@ -113,7 +113,7 @@
         }
 
         .carousel-arrow{
-            display: block;
+            display: none;
             width: 40px;
             height: 40px;
             align-self: center;
@@ -128,135 +128,14 @@
         }
     }
 
-    /* .carousel-arrow{
+}
 
-        display: block;
-
-        color: #fff;
-
-        height: 40px;
-
-        margin: 0;
-
-        }
-
+@include respond-to('desktop'){
+    #news{
         .carousel-complete{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
             .carousel-arrow{
-                width: 40px;
-                font-size: 40px;
-
-                i{
-                    max-width: 100%;
-                }
-            }
-        }
-    
-
-    .carousel{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 80%;
-        margin: auto;
-
-        .carousel-dots{
-            margin: 0;
-        }
-
-        .carousel__item{
-
-            width: 100%;
-            height: 70vh;
-
-            background: #fff;
-
-            .carousel__img{
-                position: relative;
-                min-width: 300px;
-                height: 40%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-
-                .img--hover{
-                    position: absolute;
-                    margin: auto;
-                    width: 50px;
-                    height: 50px;
-                    color: #fff;
-                    left: 50%;
-                    top: 50%;
-                    margin-left: -25px;
-                    margin-top: -25px;
-
-                    span{
-                        width: 50px;
-                        height: 50px;
-                       i{
-                            margin: auto;
-                       }
-                    }
-                }
-
-
-            }
-
-            .carousel__details{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                height: 60%;
-            }
-
-            .carousel__title{
-                font-weight: bold;
-                text-transform: uppercase;
-                font-size: 20px;
-            }
-
-            .article__writer{
-                display: flex;
-                flex-direction: row;
-
-                .writer__details{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    margin-left: 20px;
-
-                    .writer__name{
-                        text-transform: uppercase;
-                        font-size: 18px
-                    }
-                    .writer__date{
-                        color: $color1;
-                        font-size: 14px;
-                    }
-                }
+                display: block;
             }
         }
     }
-
-   
-
-#gallery {
-
-    overflow: hidden;
-}
-
-.avatar{
-    border-radius: 50%;
-}
-
- } */
-
-
-
-
 }
