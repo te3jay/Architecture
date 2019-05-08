@@ -48,13 +48,13 @@ h3 {
 
 .section__hr{
   border: 1px solid  #2f4055;
-  max-width: 20%;
+  max-width: 10%;
   margin: 10px auto;
 }
 
 .section__hr--white{
   border: 1px solid  #fff;
-  max-width: 20%;
+  max-width: 10%;
   margin: 10px auto;
 
 }
@@ -141,6 +141,10 @@ h1{
 
 h2{
   font-size: 18px;
+}
+
+h3{
+  font-size: 3rem;
 }
 
 

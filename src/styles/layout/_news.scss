@@ -2,7 +2,7 @@
 
     background: $color1;
     background-image: url("/src/images/New_bg.png");
-    background-image: url("/src/images/New_bg.png"), linear-gradient(90deg, $color2, $color1);
+    background-image: url("/src/images/New_bg.png"), linear-gradient(90deg, $color3, $color1 30%);
     background-repeat: no-repeat;
 
     height: 100vh;
