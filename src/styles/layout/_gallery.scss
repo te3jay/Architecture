@@ -28,7 +28,9 @@
         margin: auto;
         -ms-grid-columns: 100%; 
         grid-template-columns: 100% ;
-		grid-template-rows: repeat(2, [row] 2fr  );
+        grid-template-rows: repeat(2, [row] 2fr  );
+        
+        z-index: 1;
     }
 
     .box{
@@ -80,6 +82,51 @@
 		grid-template-columns: repeat(4, [col] 24% ) ;
 		grid-template-rows: repeat(1, [row] auto  );
     } 
+
+    .modal{
+        position: fixed;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color: grey, $alpha: .9);
+        opacity: 0;
+        z-index: 0;
+
+        .modal__content{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .close-cursor{
+                font-size: 40px;
+                color: #fff;
+            }
+
+            .modal-content__image{
+                width: 100%;
+                max-width: 100vw;
+                height: 80%;
+        
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+        
+                margin: auto;
+        
+                transition: .3s ease-in;
+            }
+
+            .image--open{
+                transform: translateY(0%);
+            }
+        }
+    }
 }
 
 @include respond-to('desktop'){

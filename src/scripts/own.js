@@ -156,7 +156,7 @@ function openModal() {
 
   $("#modal").css({
     'opacity' : '1',
-    'z-index' : '5'
+    'z-index' : '9'
   })
   setTimeout(function(){
     $('.modal-content__image').addClass("image--open")
@@ -175,7 +175,7 @@ function closeModal() {
   $('.modal-content__image').removeClass("image--open")
 }
 
-$(".grid-item").click(function(){
+$(".a, .c, .d, .e, .f").click(function(){
   openModal();
   
   $(".modal-content__image").css({
