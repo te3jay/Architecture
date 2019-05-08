@@ -144,8 +144,8 @@
             height: 45%;
             width: 80%;
             margin: auto;
-            grid-gap: 2%;
-            grid-template-columns: repeat(2, [col] 49% ) ;
+            grid-gap: 1%;
+            grid-template-columns: repeat(2, [col] 49.5% ) ;
             grid-template-rows: repeat(1, [row] auto  );
         }
     

@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-    const bodyScrollLock = require('./bodyScrollLock.js');
+    const bodyScrollLock = require('./bodyScrollLock');
     const disableBodyScroll = bodyScrollLock.disableBodyScroll;
     const enableBodyScroll = bodyScrollLock.enableBodyScroll; 
 
@@ -161,7 +161,8 @@ function openModal() {
   })
   setTimeout(function(){
     $('.modal-content__image').addClass("image--open")
-  }, 500);  
+  }, 500); 
+  enableBodyScroll() 
 
 }
 
@@ -175,6 +176,7 @@ function closeModal() {
      })
   }, 300)
   $('.modal-content__image').removeClass("image--open")
+  disableBodyScroll()
 }
 
 $(".a, .c, .d, .e, .f").click(function(){
