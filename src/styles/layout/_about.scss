@@ -10,9 +10,15 @@
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    .titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .arrow-down{
         margin: 40px 0;
@@ -51,6 +57,10 @@
 @include respond-to('desktop'){
 
     #about{
+
+        .titles{
+            margin-top: 100px;
+        }
 
         .about__photo{
             display: flex;

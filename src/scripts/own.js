@@ -256,6 +256,12 @@ $(".a, .c, .d, .e, .f").click(function(){
     offset: -120
   })
 
+  $("body").scroll(function(){
+    if($(".scrollspy__projects").hasClass("scrollspy__dot--current")){
+      $(".scrollspy__dot > a > div").css("border", "1px solid $color3")
+    }
+  })
+
   
 
 
