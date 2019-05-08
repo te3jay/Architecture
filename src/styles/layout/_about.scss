@@ -26,13 +26,19 @@
     }
 
     .about__photo__img{
-        max-width: 80vw;
+        width: 100%;
         margin: 0;
+    }
+
+    .about__photo{
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
     }
 
     .img__back{
         background: $color3;
-        max-width: 80vw;
+        width: 100%;
 
         .img__back__text{
 
