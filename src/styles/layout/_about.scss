@@ -37,7 +37,11 @@
     }
 
     .img__back{
-        background: $color3;
+        background: $color3 url("/src/images/New_bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        //background: $color3;
         width: 100%;
 
         .img__back__text{
